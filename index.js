@@ -106,8 +106,8 @@ const add_data = (data) => {
             data = data.map((i) => ({ ...i,
                 device: (r && r.id) ? r.id : 'NA'
             }));
-            if (r.client) mqtt_publisher.publish(r.client, JSON.stringify(data))
-            return db.create('data', data)
+            if (r && r.client) mqtt_publisher.publish(r.client, JSON.stringify(data));
+            return db.create('data', data);
         })
         .then((r) => {
             // console.log('Data inserted');
