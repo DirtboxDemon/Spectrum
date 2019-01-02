@@ -1,0 +1,22 @@
+{
+  "name": "spectrum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dirtboxdemon@bitbucket.org/intuginedev/spectrum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/intuginedev/spectrum#readme",
+  "dependencies": {
+    "@intugine-technologies/mongodb": "^1.11.4",
+    "@intugine-technologies/spectrum": "^1.1.0",
+    "axios": "^0.18.0",
+    "mqtt": "^2.18.8"
+  }
+}
