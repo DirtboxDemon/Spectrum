@@ -1,4 +1,5 @@
-const client = require("mqtt").connect("mqtt://ec2-13-233-27-3.ap-south-1.compute.amazonaws.com:1883");
+const config = require('./config.json');
+const client = require("mqtt").connect(config.BROKER_URL);
 client.on("connect", function () {
     console.log("Connected to Broker");
 });
